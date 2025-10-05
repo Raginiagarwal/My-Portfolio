@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragini's Portfolio</title>
+    <style>
+        /* Basic CSS for layout and styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+
+        .resume-section {
+            margin: 2rem 0;
+        }
+
+        .resume-section h3 {
+            color: #2c3e50;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-header {
+            margin-bottom: 1rem;
+        }
+
+        .experience-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .experience-company {
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        .experience-date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .responsibilities {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .education-item {
+            margin-bottom: 1rem;
+        }
+
+        .certifications-list {
+            list-style-type: none;
+            margin-top: 1rem;
+        }
+
+        .certifications-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .certifications-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background-color: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <h1>Ragini</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Ragini's Portfolio</h1>
+            <p>Director-level Transformation and Strategy Delivery Leader | AI & Digital Innovation Expert</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>Director-level Transformation and Strategy Delivery Leader with 18+ years of experience driving enterprise change across healthcare, financial services, insurance, and retail. Expert at aligning business strategy with digital, AI, and ERP-enabled transformation to accelerate execution and deliver measurable outcomes.</p>
+        <p>Adept at leading cross-functional programs across engineering, product, UX, operations and compliance, embedding governance frameworks (SAFe, ITIL, NIST AI RMF), and building operating models that enhance decision-making at the executive level. Recognized for translating complex business challenges into scalable strategies that improve efficiency, compliance, and customer experience.</p>
+        
+        <div class="resume-section">
+            <h3>Core Expertise</h3>
+            <ul class="responsibilities">
+                <li>Strategic Partnerships & Alliance Management</li>
+                <li>Portfolio & Program Leadership</li>
+                <li>Enterprise Strategy & Organizational Alignment</li>
+                <li>Operational Excellence & Governance</li>
+                <li>AI & Digital Innovation</li>
+                <li>Change Leadership</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Machine Learning</h3>
+                <ul>
+                    <li>Scikit-learn</li>
+                    <li>TensorFlow</li>
+                    <li>PyTorch</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Data Analysis</h3>
+                <ul>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Big Data Tools</h3>
+                <ul>
+                    <li>Spark</li>
+                    <li>Hadoop</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title">Director, Agile Transformation & Delivery Leader</div>
+                <div class="experience-company">Memorial Sloan Kettering Cancer Center</div>
+                <div class="experience-date">April 2022 – Present</div>
+            </div>
+            <ul class="responsibilities">
+                <li>Set strategic direction for enterprise transformation across AI, ERP, clinical, and consumer platforms, improving delivery speed-to-market by 20% and program success rates by 25%.</li>
+                <li>Modernized billing & payments with AI-enabled tools, improving collections efficiency, reducing call times 15%, and increasing patient satisfaction by 35%.</li>
+                <li>Established operating rhythm and governance for 9 Agile Release Trains (financial, operational, clinical).</li>
+                <li>Designed MSK's AI governance framework (aligned with NIST AI RMF).</li>
+                <li>Directed Epic release governance, overseeing upgrades and readiness processes.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title">Data & AI Transformation and Governance Lead</div>
+                <div class="experience-company">Carpet Court</div>
+                <div class="experience-date">April 2024 – March 2025</div>
+            </div>
+            <ul class="responsibilities">
+                <li>Led digital and ERP modernization, integrating JD Edwards ERP with a data lake strategy.</li>
+                <li>Advanced customer and operational outcomes by deploying AI-powered solutions, cutting service response times by 40%.</li>
+                <li>Shaped enterprise AI adoption roadmap, embedding personalization and demand forecasting models.</li>
+                <li>Established regulatory-aligned AI governance (GDPR, CCPA, EU AI Act).</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="experience-title">Senior Agile Delivery & Transformation Leader</div>
+                <div class="experience-company">Newell Brands</div>
+                <div class="experience-date">July 2021 – April 2022</div>
+            </div>
+            <ul class="responsibilities">
+                <li>Directed a $400M global digital transformation portfolio.</li>
+                <li>Partnered with C-suite leaders to establish a Change Management Review Board.</li>
+                <li>Implemented Jira Align for portfolio planning.</li>
+                <li>Spearheaded launch of a digital sales platform with AI-powered personalization.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Education & Certifications</h2>
+        
+        <div class="resume-section">
+            <h3>Education</h3>
+            <div class="education-item">
+                <div class="experience-title">AI Strategy and Leadership Program</div>
+                <div class="experience-company">MIT</div>
+                <div class="experience-date">2025</div>
+            </div>
+            <div class="education-item">
+                <div class="experience-title">Women Executive Leadership Certification</div>
+                <div class="experience-company">Yale School of Management</div>
+                <div class="experience-date">2024</div>
+            </div>
+            <div class="education-item">
+                <div class="experience-title">Bachelor's Degree</div>
+                <div class="experience-company">Emmanuel College, Boston, MA</div>
+                <div class="experience-date">2003</div>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h3>Certifications</h3>
+            <ul class="certifications-list">
+                <li>AI & Digital Transformation: MIT AI Strategy and Leadership Program</li>
+                <li>Leadership & Process Optimization: Yale SOM Women Executive Leadership, Co-Active Leadership, Kanban System Design, LPM</li>
+                <li>Agile Expertise: SAFe SPC6, RTE, POPM, ITIL Foundation, ICP-ACC</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
